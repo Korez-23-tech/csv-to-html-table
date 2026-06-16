@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>STAR CENTER TUTOR LIST TEST WEBSITE</title>
-    <meta name="author" content="Derek Eder">
+    <meta name="author" content="Andrew Chen">
     <meta content="Display any CSV file as a searchable, filterable, pretty HTML table">
 
     <!-- Bootstrap core CSS -->
@@ -47,6 +47,7 @@ preferences, identities, abilities, backgrounds, and lived experiences.</p>
     <script src="js/csv_to_html_table.js"></script>
 
     <script>
+        
         function format_link(link) {
             if (link)
                 return "<a href='" + link + "' target='_blank'>" + link + "</a>";
@@ -54,7 +55,7 @@ preferences, identities, abilities, backgrounds, and lived experiences.</p>
         }
 
         CsvToHtmlTable.init({
-            csv_path: "data/Health Clinics in Chicago.csv",
+            csv_path: "data/STAR Center Tutor Schedule.csv",
             element: "table-container",
             allow_download: true,
             csv_options: {
@@ -65,7 +66,7 @@ preferences, identities, abilities, backgrounds, and lived experiences.</p>
                 paging: false
             },
             custom_formatting: [
-                [4, format_link]
+                //[4, format_link]
             ]
         });
     </script>
